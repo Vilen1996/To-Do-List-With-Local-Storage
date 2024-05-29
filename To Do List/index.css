@@ -1,0 +1,128 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+#filter {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#todo-text {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#todo-text.error {
+  border-color: #dc3545;
+}
+
+#save-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#save-btn:hover {
+  background-color: #218838;
+}
+
+#todo-list {
+  width: 500px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo.done p {
+  text-decoration: line-through;
+  background-color: #d4edda;
+}
+
+.todo p {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.todo button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo button:hover {
+  opacity: 0.8;
+}
+
+.todo button:first-of-type {
+  background-color: #dc3545;
+  color: white;
+}
+
+.todo button:last-of-type {
+  background-color: #007bff;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+#todo-time {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.todo p:nth-child(2) {
+  font-style: italic;
+  color: #888;
+  margin-top: 5px;
+}
